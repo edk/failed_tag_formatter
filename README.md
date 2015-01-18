@@ -27,8 +27,10 @@ Add `--format FailedTagFormatter` to the options that RSpec uses.
 See the [RSpec docs](https://relishapp.com/rspec/rspec-core/v/2-6/docs/command-line/format-option) on --format for more info.
 
 
-Environment variables can control some optional behavior:
+Environment variables can control some behavior:
+`export FAILED_FORMATTER_OUTPUT=path/to_directory/` to change where the output file, component_failures.json is placed.
 
+If using parallel_tests, the component_failures is honored to create a separate "component_failures%d" for each parallel test run.
 
 
 
